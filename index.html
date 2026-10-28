@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>KnowYourFounder | Discover Founders & Startups</title>
+  <meta name="description" content="Discover founders, explore startups, read founder stories, and connect with the startup community.">
+  <meta name="theme-color" content="#103d36">
+
+  <!-- Social preview metadata. Replace the example URL after publishing this site. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KnowYourFounder — Discover Founders & Startups">
+  <meta property="og:description" content="Explore founder profiles, startup discovery, founder stories, and opportunities to connect.">
+  <meta property="og:image" content="https://YOUR-DOMAIN.example/KnowYourFounder.png">
+  <meta property="og:image:alt" content="KnowYourFounder promotional poster">
+  <meta property="og:url" content="https://YOUR-DOMAIN.example/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f5f8f7;
+      color: #103d36;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .poster-container {
+      width: 100%;
+      max-width: 928px;
+      margin: 0 auto;
+    }
+
+    .poster-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 0;
+    }
+
+    .fallback-links {
+      max-width: 928px;
+      margin: 0 auto;
+      padding: 14px 18px 24px;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    .fallback-links a {
+      color: #103d36;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="poster-container">
+      <!-- Replace KnowYourFounder.png with your real poster, keeping the same filename. -->
+      <img
+        src="KnowYourFounder.png"
+        alt="KnowYourFounder promotional poster. Select a section to open its link."
+        usemap="#founder-map"
+        id="founder-poster"
+        width="928"
+        height="1600"
+      >
+
+      <map name="founder-map" id="founder-map">
+        <!-- Coordinates are based on a 928 x 1600 poster. Adjust them if your image layout differs. -->
+        <area shape="rect" coords="48,75,580,210"
+          href="https://knowyourfounder.com/"
+          alt="KnowYourFounder Home" title="KnowYourFounder Home" target="_blank" rel="noopener">
+
+        <area shape="rect" coords="62,680,450,950"
+          href="https://knowyourfounder.com/"
+          alt="Founder Profiles" title="Explore Founder Profiles" target="_blank" rel="noopener">
+
+        <area shape="rect" coords="478,680,866,950"
+          href="https://knowyourfounder.com/"
+          alt="Startup Discovery" title="Discover Startups" target="_blank" rel="noopener">
+
+        <area shape="rect" coords="62,980,450,1250"
+          href="https://knowyourfounder.com/"
+          alt="Founder Stories" title="Read Founder Stories" target="_blank" rel="noopener">
+
+        <area shape="rect" coords="478,980,866,1250"
+          href="https://knowyourfounder.com/"
+          alt="Connect and Collaborate" title="Connect and Collaborate" target="_blank" rel="noopener">
+
+        <area shape="rect" coords="220,1300,708,1410"
+          href="https://knowyourfounder.com/start.html"
+          alt="Explore Now" title="Explore KnowYourFounder" target="_blank" rel="noopener">
+
+        <area shape="rect" coords="260,1445,680,1515"
+          href="https://knowyourfounder.com/"
+          alt="KnowYourFounder Website" title="Visit knowyourfounder.com" target="_blank" rel="noopener">
+      </map>
+    </div>
+
+    <!-- Text links provide an alternative for keyboard users and if image-map support is limited. -->
+    <nav class="fallback-links" aria-label="Poster links">
+      <a href="https://knowyourfounder.com/" target="_blank" rel="noopener">Home</a>
+      <a href="https://knowyourfounder.com/" target="_blank" rel="noopener">Founder Profiles</a>
+      <a href="https://knowyourfounder.com/" target="_blank" rel="noopener">Startup Discovery</a>
+      <a href="https://knowyourfounder.com/" target="_blank" rel="noopener">Founder Stories</a>
+      <a href="https://knowyourfounder.com/" target="_blank" rel="noopener">Connect</a>
+      <a href="https://knowyourfounder.com/start.html" target="_blank" rel="noopener">Explore Now</a>
+    </nav>
+  </main>
+
+  <!-- This library keeps image-map clickable areas aligned when the image is resized. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      if (typeof imageMapResize === "function") {
+        imageMapResize();
+      }
+    });
+  </script>
+</body>
+</html>
